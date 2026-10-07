@@ -30,7 +30,7 @@ class StudentData(BaseModel):
        'WeChat']
     Purpose_Of_Use: Literal['Networking', 'Education', 'Entertainment', 'News']
     Avg_Daily_Usage_Hours: float=Field(...,ge=0,le=24)
-    Daily_Unlocks: float=Field(...ge=0)
+    Daily_Unlocks: float=Field(...,ge=0)
     Study_Hours: float=Field(...,ge=0,le=24)
     Physical_Activity_Hours: float=Field(...,ge=0,le=24)
     Sleep_Hours_Per_Night: float=Field(...,ge=0,le=24)
