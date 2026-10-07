@@ -33,7 +33,7 @@ class StudentData(BaseModel):
     Daily_Unlocks: float=Field(...ge=0)
     Study_Hours: float=Field(...,ge=0,le=24)
     Physical_Activity_Hours: float=Field(...,ge=0,le=24)
-    Sleep_Hours_Per_Night: float=Field(...,ge=0.le=24)
+    Sleep_Hours_Per_Night: float=Field(...,ge=0,le=24)
     Stress_Level: Literal['Medium', 'Low', 'Very High', 'High']
     
 #Describe what we send back
